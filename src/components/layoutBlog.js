@@ -4,15 +4,19 @@ import {
   container,
   heading,
   navLinks,
+  navButtons,
   navLinkItem,
   navLinkText 
-} from './layout.module.css'
+} from './layoutBlog.module.css'
 
-const Layout = ({ pageTitle, children }) => {
+const LayoutBlog = ({ pageTitle, children }) => {
   return (
     <div className={container}>
+      
+    
+    
     <nav>
-      <ul className={navLinks}>
+      <ul className={navLinks, navButtons}>
         <li className={navLinkItem}>
           <Link to="/" className={navLinkText}>
             Home
@@ -33,4 +37,4 @@ const Layout = ({ pageTitle, children }) => {
   )
 }
 
-export default Layout
+export default LayoutBlog
